@@ -1,4 +1,5 @@
 // 1) Import the React and ReactDOM libraries
+import App from './App';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
@@ -8,17 +9,5 @@ const el = document.getElementById('root');
 // 3) Tell React to take controle of that element
 const root = ReactDOM.createRoot(el);
 
-// 4) Create a component 
-function App() {
-  // let message = 'By there!'
-  let message = {};
-
-  // if (Math.random() > 0.5) {
-  //   message = 'Hello there!'
-  // }
-
-  return <h1>{message}</h1>;
-}
-
-// 5) Show the component on the screen
+// 4) Show the component on the screen
 root.render(<App/>);
